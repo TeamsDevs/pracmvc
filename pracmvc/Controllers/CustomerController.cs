@@ -16,6 +16,7 @@ namespace pracmvc.Controllers
             using (DatabaseModel db = new DatabaseModel())
             {
                 return View(db.tbCustomers.ToList());
+                //test
             }
               
         }
