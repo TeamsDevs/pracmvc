@@ -13,6 +13,7 @@ namespace pracmvc.Controllers
         // GET: Customer
         public ActionResult Index()
         {
+            //to save
             using (DatabaseModel db = new DatabaseModel())
             {
                 return View(db.tbCustomers.ToList());
