@@ -4,38 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="CUSTOMDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <!--Errors Found During Generation:
-warning 6013: The table/view 'CUSTOMDB.dbo.CustINFO' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
-        <EntityType Name="CustINFO">
-          <Property Name="ID" Type="int" />
-          <Property Name="AGE" Type="varchar" MaxLength="50" />
-          <Property Name="NAME" Type="varchar" MaxLength="50" />
-          <Property Name="Amount" Type="int" />
-        </EntityType>-->
-        <!--Errors Found During Generation:
-warning 6013: The table/view 'CUSTOMDB.dbo.custohistorical' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
-        <EntityType Name="custohistorical">
-          <Property Name="ID" Type="int" />
-          <Property Name="Amount" Type="int" />
-        </EntityType>-->
-        <!--Errors Found During Generation:
-warning 6013: The table/view 'CUSTOMDB.dbo.custoinfo2' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
-        <EntityType Name="custoinfo2">
-          <Property Name="ID" Type="int" />
-          <Property Name="Amount" Type="int" />
-          <Property Name="age" Type="int" />
-          <Property Name="name" Type="varchar" MaxLength="50" />
-        </EntityType>-->
-        <!--Errors Found During Generation:
-warning 6013: The table/view 'CUSTOMDB.dbo.CUSTOMERINSURED' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
-        <EntityType Name="CUSTOMERINSURED">
-          <Property Name="PNO" Type="nvarchar" MaxLength="11" />
-          <Property Name="LPLAN" Type="nchar" MaxLength="10" />
-          <Property Name="NAME" Type="nvarchar" MaxLength="50" />
-          <Property Name="LCLS" Type="nchar" MaxLength="10" />
-          <Property Name="AGE" Type="nchar" MaxLength="10" />
-        </EntityType>-->
+    <Schema Namespace="CUSTOMDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="tbCustomer">
           <Key>
             <PropertyRef Name="ID" />
@@ -50,8 +19,7 @@ warning 6013: The table/view 'CUSTOMDB.dbo.CUSTOMERINSURED' does not have a prim
         <EntityContainer Name="CUSTOMDBModelStoreContainer">
           <EntitySet Name="tbCustomer" EntityType="Self.tbCustomer" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="CUSTOMDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
