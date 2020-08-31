@@ -13,7 +13,7 @@ namespace pracmvc.Controllers
         // GET: Customer
         public ActionResult Index()
         {
-            //to save akumas
+            //test to push
             using (DatabaseModel db = new DatabaseModel())
             {
                 return View(db.tbCustomers.ToList());
